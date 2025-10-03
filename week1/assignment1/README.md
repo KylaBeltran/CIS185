@@ -14,13 +14,17 @@ I created a web page showcasing 5 HTML elements with semantic meaning and custom
 **Purpose:** Displays an abbreviation
 **How I used it:** Marked acronyms like HTML and CSS with full descriptions  
 **Why it's useful:** Improves accessibility and helps users understand abbreviations
-```<p>The <abbr title="HyperText Markup Language">HTML</abbr> structure is the backbone of webpages.</p>```
+```
+<p>The <abbr title="HyperText Markup Language">HTML</abbr> structure is the backbone of webpages.</p>
+```
 
 2. `<mark>` 
 **Purpose:** Highlights important text 
 **How I used it:** Emphasized key terms in paragraphs
 **Why it's useful:** Makes important information stand out visually
-```<p>Learning <mark>HTML</mark> and <mark>CSS</mark> is essential for web development.</p>```
+```
+<p>Learning <mark>HTML</mark> and <mark>CSS</mark> is essential for web development.</p>
+```
 
 3. `<details>` + `<summary>`
 **Purpose:** Creates interactable content sections
@@ -36,7 +40,9 @@ I created a web page showcasing 5 HTML elements with semantic meaning and custom
 **Purpose:** Shows task completion progress visually
 **How I used it:** Displayed my HTML & CSS learning progress
 **Why it's useful:** Gives a visual indicator of completion or loading status
-``` <progress value="10" max="100">10% Complete</progress> ```
+```
+<progress value="10" max="100">10% Complete</progress> 
+```
 
 5. `<blockquote>` 
 **Purpose:** Adds a section for marking quotes from another source
