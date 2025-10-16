@@ -1,0 +1,137 @@
+:root {
+    --primary-color: #360102;         /*footer&header (red)*/
+    --secondary-color: #140102;       /*highlioghts&buttons*/
+    --bg-color: #ffb8ba;              /*bg*/
+    --text-color: #333;               /*texts*/
+    --accent-color: #140102;          /*effects*/
+    --font-main: 'Cinzel', serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+}
+
+.pumpkin {
+    position: absolute;
+    width: 80px;
+    top: 75%;
+    right: 5%;
+    z-index: 10;
+}
+
+.bat {
+    position: absolute;
+    width: 80px;
+    top: 15%;
+    right: 55%;
+    z-index: 10;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.brand h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.tagline {
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+}
+
+    .nav-link:hover {
+        color: var(--accent-color) !important;
+    }
+
+.about-section {
+    background-color: #fff;
+    padding: 3rem 0;
+}
+
+    .about-section img.profile-img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        border-radius: 50%;
+        border: 3px solid var(--secondary-color);
+    }
+
+.projects-section {
+    background-color: var(--bg-color);
+    padding: 3rem 0;
+}
+
+.custom-card {
+    background-color: #fff;
+    border: 3px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .custom-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .custom-card h3 {
+        color: var(--secondary-color);
+        margin-bottom: 0.5rem;
+    }
+
+.contact-section {
+    background-color: #fff;
+    padding: 3rem 0;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+    .contact-form label {
+        font-weight: 500;
+    }
+
+    .contact-form input,.contact-form textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-family: var(--font-main);
+    }
+
+.custom-btn {
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+    .custom-btn:hover {
+        background-color: var(--primary-color);
+    }

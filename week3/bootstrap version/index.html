@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyla Beltran | Bootstrap Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <img src="images/gif.gif" alt="Pumpkin" class="pumpkin">
+    <img src="images/bat.gif" alt="Bat" class="bat">
+
+    <header class="py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="brand">
+                <h1 class="h3 mb-0">Kyla Beltran</h1>
+                <p class="mb-0">Student | Future Software Developer</p>
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">About Me</h2>
+                <div class="row align-items-center">
+                    <div class="col-md-4 text-center mb-3 mb-md-0">
+                        <img src="images/pic.jpg" class="img-fluid rounded-circle profile-img" alt="My Pic">
+                    </div>
+                    <div class="col-md-8">
+                        <p>
+                            Hi! My name is Kyla Beltran. I'm a Software Dev student at South Puget Sound Community College. I enjoy building small projects, customizing, and practicing responsive layout techniques.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Projects</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 custom-card">
+                            <div class="card-body">
+                                <h3 class="card-title">Car Dealership App</h3>
+                                <p class="card-text">
+                                    A simple 3-tier application. It demonstrates role-based access, user authentication, and CRUD operations against a SQL database.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 custom-card">
+                            <div class="card-body">
+                                <h3 class="card-title">Online Bookstore</h3>
+                                <p class="card-text">
+                                    A small web app prototype for managing books and orders. Includes semantic markup, forms, and layouts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 custom-card">
+                            <div class="card-body">
+                                <h3 class="card-title">Pastry Ordering System</h3>
+                                <p class="card-text">
+                                    A project demonstrating UI for ordering pastries, with a focus on UX and accessibility.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Contact</h2>
+                <form class="mx-auto" style="max-width:500px;" action="#" method="post">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input id="name" name="name" type="text" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input id="email" name="email" type="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn w-100 custom-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-3">
+        <div class="container">
+            <p>© <time datetime="2025-10-15">2025</time> Kyla Beltran</p>
+            <p class="mb-0">
+                <a href="#about" class="me-3">About</a>
+                <a href="#projects" class="me-3">Projects</a>
+                <a href="#contact">Contact</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

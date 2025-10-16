@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Kyla Beltran | Personal Portfolio</title>
+
+		<!-- GOOGLE FONT "Cinzel" ??used &amp?? -->
+		<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&amp;display=swap" rel="stylesheet" />
+
+		<link rel="stylesheet" href="css/style.css"/>
+	</head>
+	
+	<body>
+		<!-- pumpkin :D -->
+		<img src="images/gif.gif" alt="Pumpkin" class="pumpkin" />
+
+		<!-- header -->
+		<header>
+			<div class="header-inner container">
+				<div class="brand">
+					<h1>Kyla Beltran</h1>
+					<p class="tagline">Student  | Future Software Developer</p>
+				</div>
+
+				<nav aria-label="Main navigation">
+					<ul class="main-nav">
+						<li>
+							<a href="#about">About</a>
+						</li>
+						
+						<li>
+							<a href="#projects">Projects</a>
+						</li>
+						
+						<li>
+							<a href="#contact">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<!-- about -->
+			<section id="about" class="about-section">
+				<h2>About Me</h2>
+				<div class="about-container">
+					<img src="images/pic.jpg" alt="My Pic" />
+					
+					<div class="about-text">
+						<p>Hi my name is Kyla Beltran. Im a Software Dev. student at South Puget Sound Community College. I enjoy building small projects, customizing, and practicing responsive layout techniques.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- projects -->
+			<section id="projects" class="projects-section">
+				<h2>Projects</h2>
+				<div class="projects-grid">
+					<article class="project-card">
+						<h3>Car Dealership App</h3>
+						<p>A simple 3-tier application. It demonstrates role-based access, user authentication, and CRUD operations against a SQL database.</p>
+					</article>
+
+					<article class="project-card">
+						<h3>Online Bookstore</h3>
+						<p>A small web app prototype for managing books and orders. Includes semantic markup, forms, and layouts.</p>
+					</article>
+
+					<article class="project-card">
+						<h3>Pastry Ordering System</h3>
+						<p>A project demonstrating UI for ordering pastries, with a focus on UX and accessibility.</p>
+					</article>
+				</div>
+			</section>
+
+			<!-- contact me -->
+			<section id="contact" class="contact-section">
+				<h2>Contact</h2>
+				<form class="contact-form" action="#" method="post" aria-label="Contact form">
+					<label for="name">Name</label>
+					<input id="name" name="name" type="text" required="" />
+
+					<label for="email">Email</label>
+					<input id="email" name="email" type="email" required="" />
+
+					<label for="message">Message</label>
+					<textarea id="message" name="message" rows="5" required=""></textarea>
+
+					<button type="submit">Send Message</button>
+				</form>
+			</section>
+		</main>
+
+		<!-- footer -->
+		<footer class="site-footer" role="contentinfo">
+			<div class="container footer-inner">
+				<p>
+					© <time datetime="2025-10-09">2025</time> Kyla Beltran
+				</p>
+				<p class="footer-links">
+					<a href="#about">About</a>
+					<a href="#projects">Projects</a>
+					<a href="#contact">Contact</a>
+				</p>
+			</div>
+		</footer>
+		
+	</body>
+</html>
