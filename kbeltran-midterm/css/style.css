@@ -1,0 +1,309 @@
+/* ===============================
+             main
+================================== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Didot', 'Georgia', serif;
+    background: #f9e6ea;
+    color: #4a2e2a;
+}
+
+/*borders*/
+    body::before,
+    body::after {
+        content: "";
+        position: fixed;
+        top: 0;
+        width: 80px;
+        height: 100%;
+        background-image: url("../images/border.png");
+        background-size: cover;
+        background-repeat: repeat-y;
+        z-index: 10;
+        opacity: 0.35;
+    }
+
+/*mirroring form aesthetic purposes*/
+    body::before {
+        left: 0;
+        transform: scaleX(-1);
+    }
+
+    body::before {
+        left: 0;
+    }
+
+    body::after {
+        right: 0;
+    }
+
+    body > * {
+        width: min(1200px, 90%);
+        margin: 0 auto;
+        position: relative;
+        z-index: 20;
+    }
+
+/* ===============================
+             header
+================================== */
+.lace-header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #fdf2f4, #fbe3e8);
+    border-bottom: 4px solid #c48a88;
+}
+
+.site-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #5a3a36;
+    margin: 0;
+}
+
+.subtitle {
+    margin-top: 5px;
+    font-size: 1.2rem;
+    color: #7d5753;
+}
+
+/* ===============================
+              country
+================================== */
+.country-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 30px;
+}
+
+.tab {
+    display: inline-block;
+    background: #fce4e9;
+    border: 2px solid #c48a88;
+    padding: 10px 25px;
+    margin: 0 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #5a3a36;
+    transition: 0.3s;
+}
+
+    .tab:hover {
+        background: #f8d3da;
+    }
+
+    .tab.active,
+    .filter-btn.active {
+        background: #c48a88;
+        color: white;
+        border-color: #a56d6b;
+    }
+
+
+/* ===============================
+            filters
+================================== */
+.filters-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+    .filters-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.filter-btn {
+    background: #ffe8ee;
+    border: 2px solid #d5a1a1;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #5a3a36;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+    .filter-btn:hover {
+        background: #f8d3da;
+    }
+
+/* ===============================
+             products
+================================== */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 2rem;
+    justify-items: center;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+    .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+    }
+
+    .product-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: contain;
+        margin-bottom: 0.5rem;
+    }
+
+    /* title */
+    .product-card h3 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        color: #b565a7;
+    }
+
+    /* description */
+    .product-card p {
+        font-size: 0.85rem;
+        color: #333;
+        margin-bottom: 0.5rem;
+    }
+
+/* ===============================
+          navi
+================================== */
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+    .main-nav a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: #5a3a36;
+        background: #fce4e9;
+        padding: 8px 18px;
+        border-radius: 10px;
+        border: 2px solid #c48a88;
+        transition: 0.3s ease;
+    }
+
+        .main-nav a:hover {
+            background: #c48a88;
+            color: #fff;
+            transform: translateY(-3px);
+        }
+
+    .subnav a {
+        color: #5a3a36;
+        text-decoration: none;
+        margin: 0 15px;
+        padding: 8px 15px;
+        border-radius: 8px;
+        border: 2px solid #d5a1a1;
+        background: #ffe8ee;
+        transition: 0.3s;
+    }
+
+        .subnav a:hover {
+            background: #f8d3da;
+        }
+
+        .subnav a.active {
+            background: #c48a88;
+            color: white;
+            border-color: #a56d6b;
+        }
+
+
+/* ===============================
+               footer
+================================== */
+.lace-footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(to top, #fdf2f4, #fbe3e8);
+    border-top: 4px solid #c48a88;
+}
+
+    .lace-footer p {
+        margin: 0;
+        color: #5a3a36;
+    }
+
+.footer-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #5a3a36;
+    margin-bottom: 15px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 12px;
+        border: 2px solid #d5a1a1;
+        border-radius: 8px;
+        font-family: 'Didot', serif;
+        font-size: 0.95rem;
+        background: #fff;
+        color: #4a2e2a;
+        outline: none;
+    }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #c48a88;
+            background: #fff7fa;
+        }
+
+    .contact-form button {
+        background-color: #c48a88;
+        border: none;
+        color: white;
+        padding: 12px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1rem;
+        font-family: 'Didot', serif;
+        transition: 0.3s;
+    }
+
+        .contact-form button:hover {
+            background-color: #a56d6b;
+        }
+
+.footer-copy {
+    margin-top: 10px;
+    color: #5a3a36;
+    font-size: 0.9rem;
+}
+

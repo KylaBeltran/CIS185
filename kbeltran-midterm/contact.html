@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Skincare Picks</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <header class="lace-header">
+        <h1 class="site-title">Contact Us</h1>
+        <p class="subtitle">Send us your questions or ask for recommendations</p>
+    </header>
+
+    <!-- nav-->
+    <nav class="subnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <!--contact-->
+    <section class="contact-section">
+        <h2>Get in Touch</h2>
+
+        <form class="contact-form">
+            <label for="name">Your Name</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+
+            <label for="email">Your Email</label>
+            <input id="email" type="email" placeholder="Enter your email" required>
+
+            <label for="skin">Skin Concern (optional)</label>
+            <select id="skin">
+                <option value="">— Select —</option>
+                <option>Dry Skin</option>
+                <option>Oily Skin</option>
+                <option>Combination</option>
+                <option>Acne Prone</option>
+                <option>Hyperpigmentation</option>
+                <option>Large Pores</option>
+                <option>Anti-Aging</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="How can we help?" required></textarea>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="lace-footer">
+        <p>© 2025 Skincare Picks</p>
+    </footer>
+
+</body>
+</html>

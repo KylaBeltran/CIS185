@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare Picks</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!--header-->
+    <header class="lace-header">
+        <h1 class="site-title">Skincare Picks</h1>
+        <p class="subtitle">Curated skincare from Korea, USA, and Japan</p>
+    </header>
+
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!--countries-->
+    <section class="country-tabs">
+        <button class="tab active" data-country="all">All</button>
+        <button class="tab" data-country="korea">Korea</button>
+        <button class="tab" data-country="usa">USA</button>
+        <button class="tab" data-country="japan">Japan</button>
+    </section>
+
+
+    <!--filters-->
+    <section class="filters-section">
+        <h2>Filter by Type of Product</h2>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="toner">Toner</button>
+            <button class="filter-btn" data-filter="serum">Serum</button>
+            <button class="filter-btn" data-filter="essence">Essence</button>
+            <button class="filter-btn" data-filter="SPF">SPF</button>
+            <button class="filter-btn" data-filter="Face Cleanser">Facial Cleanser</button>
+            <button class="filter-btn" data-filter="moisturizer">Moisturizer</button>
+            <button class="filter-btn" data-filter="mask">Face Mask</button>
+        </div>
+    </section>
+
+    <!--products-->
+    <section class="product-grid">
+
+        <!--JPN-->
+        <div class="product-card" data-country="japan" data-filter="SPF">
+            <img src="images/jpn/biore.png" alt="Product 1">
+            <h3>Biore UV Aqua Rich Watery Essence SPF 50+</h3>
+            <p>A sunscreen that contains "Micro UV Cut Capsules" that prevents uneven application.</p>
+        </div>
+
+        <div class="product-card" data-country="japan" data-filter="Face Cleanser">
+            <img src="images/jpn/senka.png" alt="Product 2">
+            <h3>Senka Perfect Whip Cleansing Foam</h3>
+            <p>This cleanser contains hyaluronic acid to bring moisture without disturbing the skin.</p>
+        </div>
+
+        <div class="product-card" data-country="japan" data-filter="SPF">
+            <img src="images/jpn/canmake-mermaid.png" alt="Product 3">
+            <h3>Canmake Mermaid Skin Gel UV</h3>
+            <p>A lightweight gel sunscreen containing SPF50+ PA++++. Recommended for those who prefer a light and refreshing sunscreen.</p>
+        </div>
+
+        <div class="product-card" data-country="japan" data-filter="SPF">
+            <img src="images/jpn/dhc-collagen.png" alt="Product 4">
+            <h3>Anessa Perfect UV Sunscreen</h3>
+            <p>Sunscreen that blocks powerful UV rays that pierces into the skin barrier.</p>
+        </div>
+
+        <div class="product-card" data-country="japan" data-filter="essence">
+            <img src="images/jpn/hadalabo-gokujyun.png" alt="Product 5">
+            <h3>Hada Labo Gokujyun Hyaluronic Acid Lotion</h3>
+            <p>This product contains carefully selected hyaluronic acids, which are highly moisturizing. Aims to deliver moisture directly into the skin.</p>
+        </div>
+
+        <div class="product-card" data-country="japan" data-filter="SPF">
+            <img src="images/jpn/hadalabo-uv.png" alt="Product 6">
+            <h3>Hada Labo Gokujyun UV White Gel</h3>
+            <p>This gel contains 3 moisturizing agents as well as formulated with high SPF50+ PA++++.</p>
+        </div>
+
+        <div class="product-card" data-country="japan" data-filter="essence">
+            <img src="images/jpn/melanocc.png" alt="Product 7">
+            <h3>Melano CC Intensive Anti-Spot Essence</h3>
+            <p>This serum contains active Vitamin C ingredients. It helps penetrate the stratum corneum skin layer and activate formation of melanin.</p>
+        </div>
+
+        <div class="product-card" data-country="japan" data-filter="moisturizer">
+            <img src="images/jpn/naturie.png" alt="Product 8">
+            <h3>Naturie Hatomugi Skin Conditioner</h3>
+            <p>This mild skin conditioner contains coix seed extract to moisturize, brighten, and smoothens the skin.</p>
+        </div>
+
+        <div class="product-card" data-country="japan" data-filter="mask">
+            <img src="images/jpn/ricemask.png" alt="Product 9">
+            <h3>Keana Nadeshiko Rice Mask</h3>
+            <p>This rice mask targets towards moisture-deficient skin with rought texture and uneven pores.</p>
+        </div>
+
+        <!--USA-->
+        <div class="product-card" data-country="usa" data-filter="mask">
+            <img src="images/usa/biodance.png" alt="Product 10">
+            <h3>BIODANCE Bio-Collagen Real Deep Mask</h3>
+            <p>This mask quickly hydrates the skin's surface and penetrates deeper layers, leaving the complexion healthy and well-moisturized.</p>
+        </div>
+
+        <div class="product-card" data-country="usa" data-filter="moisturizer">
+            <img src="images/usa/bora.png" alt="Product 11">
+            <h3>Drunk Elepahnt Bora Barrier Moisturizer</h3>
+            <p>Incredibly moisturizing and has tons of nourishing ingredients to protect and enhance skin barrier.</p>
+        </div>
+
+        <div class="product-card" data-country="usa" data-filter="moisturizer">
+            <img src="images/usa/cerave.png" alt="Product 12">
+            <h3>CeraVe Moisturizing Cream</h3>
+            <p>Moisturizer with hyaluronic acid, ceramides, and MVE technology for 24 hour hydration.</p>
+        </div>
+
+        <div class="product-card" data-country="usa" data-filter="toner">
+            <img src="images/usa/glycolic.png" alt="Product 13">
+            <h3>The Ordinary Glycolic Acid 7% Exfoliating Toner</h3>
+            <p>Smoothes skin texture, visibly even tone, and enhances luminosity with daily use.</p>
+        </div>
+
+        <div class="product-card" data-country="usa" data-filter="mask">
+            <img src="images/usa/mighty.png" alt="Product 14">
+            <h3>Mighty Patch</h3>
+            <p>The pimple emergency patch that helps absorbs pimple gunks.</p>
+        </div>
+
+        <div class="product-card" data-country="usa" data-filter="toner">
+            <img src="images/usa/ordinary.png" alt="Product 15">
+            <h3>The Ordinary Niacinamide 10% + Zinc 1%</h3>
+            <p>Smoothing serum for blemish prone skin.</p>
+        </div>
+
+        <div class="product-card" data-country="usa" data-filter="Face Cleanser">
+            <img src="images/usa/panoxyl.png" alt="Product 16">
+            <h3>PanOxyl Acne Foaming Wash Benzoyl Peroxide 10%</h3>
+            <p>Clears existing acne and helps prevent new breakouts.</p>
+        </div>
+
+        <div class="product-card" data-country="usa" data-filter="toner">
+            <img src="images/usa/zeropore.png" alt="Product 17">
+            <h3>Medicube Zero Pore Pad</h3>
+            <p>Facial toner pads that contain Salicylic Acid(BHA) + AHA to help exfoliate dead skin cells, sebum, and minimize the look of pores.</p>
+        </div>
+
+        <div class="product-card" data-country="usa" data-filter="serum">
+            <img src="images/usa/glow.png" alt="Product 18">
+            <h3>Glow Recipe Watermelon Glow Niacinamide Dew Drops Serum</h3>
+            <p>A multi-use highlighting serum that hydrates and visibly reduces the look of hyperpigmentation.</p>
+        </div>
+
+        <!--KOR-->
+        <div class="product-card" data-country="korea" data-filter="SPF">
+            <img src="images/kor/boj.png" alt="Product 19">
+            <h3>Beauty of Joseon Relief Sun</h3>
+            <p>Broad spectrum SPF 50+ PA++++ to fend off UVA and UVB rays.</p>
+        </div>
+
+        <div class="product-card" data-country="korea" data-filter="serum">
+            <img src="images/kor/centella.png" alt="Product 20">
+            <h3>SKIN1004 Madagascar Centella Ampoule</h3>
+            <p>All rounder  ampoule with great qualities for redness and irritation relief.</p>
+        </div>
+
+        <div class="product-card" data-country="korea" data-filter="serum">
+            <img src="images/kor/dalba.png" alt="Product 21">
+            <h3>d'Alba White Truffle First Spray Serum</h3>
+            <p>This mist serum features a dual-layer formulation to provide depp hydration while enhancing skin firmness.</p>
+        </div>
+
+        <div class="product-card" data-country="korea" data-filter="moisturizer">
+            <img src="images/kor/illyoon.png" alt="Product 22">
+            <h3>ILLYOON Ceramide Ato Concentrate Cream</h3>
+            <p>this moisturizer is free of various irritating ingredients and it strengthen the skin barrier while keeping moisture levels high.</p>
+        </div>
+
+        <div class="product-card" data-country="korea" data-filter="Face Cleanser">
+            <img src="images/kor/manyo.png" alt="Product 23">
+            <h3>ma:nyo Pure Cleansing Oil</h3>
+            <p>Oil cleanser that dissolves stubborn and waterproof makeup. It is vitamin rich and restores skin's natural moisture and pH balance.'</p>
+        </div>
+
+        <div class="product-card" data-country="korea" data-filter="essence">
+            <img src="images/kor/snail.png" alt="Product 24">
+            <h3>COSRX Advanced Snail 96 Mucin Power Essence</h3>
+            <p>An anti-aging essence that helps minimize pores and reveal a brighter complexion.</p>
+        </div>
+
+        <div class="product-card" data-country="korea" data-filter="toner">
+            <img src="images/kor/somebymi.png" alt="Product 25">
+            <h3>SOME BY MI - AHA, BHA, PHA 30 Days Miracle Toner</h3>
+            <p>Contains 10,000 ppm of tea tree leaf extract. Removes dead skin cells and impurities without irritation.</p>
+        </div>
+
+        <div class="product-card" data-country="korea" data-filter="serum">
+            <img src="images/kor/torriden.png" alt="Product 26">
+            <h3>Torriden DIVE IN Serum</h3>
+            <p>Inner moisture serum provides moisture to skin with 5D multi low-molecular hyaluronic acid.</p>
+        </div>
+
+        <div class="product-card" data-country="korea" data-filter="moisturizer">
+            <img src="images/kor/147.png" alt="Product 27">
+            <h3>Dr. Althea 147 Barrier Cream</h3>
+            <p>Smoothes uneven and irritated skin as well as moisturizes skin deeply and forms a moisture barrier for long lasting moisture.</p>
+        </div>
+
+    </section>
+
+    <!--footer-->
+    <footer class="lace-footer">
+
+        <p class="footer-title">Contact Me</p>
+
+
+        <form class="contact-form" action="#" method="post">
+
+            <input type="text" placeholder="Your Name" required>
+
+            <input type="email" placeholder="Your Email" required>
+
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+        <p class="footer-copy">© 2025 Skincare Picks</p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
+
