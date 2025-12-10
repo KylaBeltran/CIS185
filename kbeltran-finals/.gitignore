@@ -1,0 +1,12 @@
+# Ignore VS temporary folders
+.vs/
+
+# Ignore node_modules
+node_modules/
+
+# Ignore build folders
+dist/
+build/
+
+# Ignore logs
+*.log
